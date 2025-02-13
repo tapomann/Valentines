@@ -1,0 +1,68 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: #ffeff1;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 15%;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #d63384;
+}
+
+.buttons {
+    margin-top: 20px;
+    position: relative;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+#yesBtn {
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#noBtn {
+    background-color: #f08080;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#message {
+    font-size: 1.8rem;
+    color: #d63384;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Heart animation */
+@keyframes floatHeart {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
+}
+
+.heart {
+    position: absolute;
+    font-size: 2rem;
+    color: red;
+    animation: floatHeart 1s ease-out forwards;
+}
